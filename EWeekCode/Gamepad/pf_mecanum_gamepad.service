@@ -1,0 +1,23 @@
+[Unit]
+Description=PathfinderBot mecanum gamepad drive
+After=network.target multi-user.target
+
+[Service]
+Type=simple
+
+# Start in the code folder so relative imports and files work
+WorkingDirectory=/home/robot/EWeekCode/pf
+
+# Use python (system default)
+ExecStart=/usr/bin/python /home/robot/EWeekCode/pf/pf_mecanum_gamepad_drive.py
+
+# Restart service if it crashes
+Restart=on-failure
+RestartSec=2
+
+# Give the script a little time to shut down cleanly
+TimeoutStopSec=10
+
+[Install]
+# Start this service when the system reaches multi-user mode (normal console boot)
+WantedBy=multi-user.target
