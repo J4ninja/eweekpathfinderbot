@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cp -f Control.py Model.py /home/robot/EWeekCode/
+cp -f /home/robot/EWeekCode/Template/Control.py  /home/robot/EWeekCode/TemplateModel.py /home/robot/EWeekCode/code

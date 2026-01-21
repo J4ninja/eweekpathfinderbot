@@ -6,10 +6,10 @@ After=network.target multi-user.target
 Type=simple
 
 # Start in the code folder so relative imports and files work
-WorkingDirectory=/home/robot/EWeekCode/pf
+WorkingDirectory=/home/robot/EWeekCode/code
 
 # Use python (system default)
-ExecStart=/usr/bin/python /home/robot/EWeekCode/pf/pf_mecanum_gamepad_drive.py
+ExecStart=/usr/bin/python /home/robot/EWeekCode/code/pf_mecanum_gamepad_drive.py
 
 # Restart service if it crashes
 Restart=on-failure

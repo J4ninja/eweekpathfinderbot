@@ -10,8 +10,8 @@ Once you implement a function, run the Control.py code on your robot to test it!
 # DO NOT MODIFY FUNCTIONS WITHOUT A TODO
 ##################################################################
 import time
-from pf import Board as Board
-from pf import Sonar as Sonar
+import Board as Board
+from Sonar import Sonar as Sonar
 
 def motorStop():
     """

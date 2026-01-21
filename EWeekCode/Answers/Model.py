@@ -10,8 +10,8 @@ Once you implement a function, run the Control.py code on your robot to test it!
 # DO NOT MODIFY FUNCTIONS WITHOUT A TODO
 ##################################################################
 import time
-from pf import Board as Board
-from pf import Sonar as Sonar
+import Board as Board
+from Sonar import Sonar as Sonar
 
 def motorStop():
     """
@@ -161,6 +161,18 @@ def sonarDetection():
         time.sleep(0.5)                         # Wait half a second before looping again
 
 # This is an example of turning the servos
+def look_forward():
+    """
+    Resets Arm Position to Forward
+    """
+    Board.setPWMServoPulse(1, 1500, 500)
+    Board.setPWMServoPulse(3, 700, 1000)
+    Board.setPWMServoPulse(4, 2425, 1000)
+    Board.setPWMServoPulse(5, 790, 1000)
+    Board.setPWMServoPulse(6, 1500, 1000)
+    time.sleep(1)
+
+# This is an example of turning the servos
 def turnArmLeft():
     """
     Turns Robot arm to the left
@@ -175,6 +187,13 @@ def turnArmRight():
     # - Servo number (1–6)
     # - pulse: Position (typically between 500 and 2500)
     # - use_time: Time in milliseconds to move
+    Board.setPWMServoPulse(1, 2020, 1000)
+    Board.setPWMServoPulse(3, 800, 1000)
+    Board.setPWMServoPulse(4, 1800, 1000)
+    Board.setPWMServoPulse(5, 2091, 1000)
+    Board.setPWMServoPulse(6, 500, 1000)
+    time.sleep(1)
+    look_forward()
 
 def openClaw():
     """
@@ -246,27 +265,15 @@ def pickupBlock():
     time.sleep(1)
     Board.setPWMServoPulse(4, 2023, 300)
     Board.setPWMServoPulse(5, 2091, 300)
-    Board.setPWMServoPulse(1, 2400, 500)
-    time.sleep(1)
-    Board.setPWMServoPulse(1, 2500, 500)
+    time.sleep(0.3)
+    Board.setPWMServoPulse(1, 1932, 400)
+    time.sleep(0.4)
     Board.setPWMServoPulse(3, 750, 800)
-    Board.setPWMServoPulse(4, 2150, 500)
     Board.setPWMServoPulse(5, 2364, 800)
-    time.sleep(.8)
+    time.sleep(0.8)
     Board.setPWMServoPulse(1, 1455, 300)
     Board.setPWMServoPulse(5, 2318, 300)
-    time.sleep(.3)
+    time.sleep(0.3)
     Board.setPWMServoPulse(5, 1841, 1000)
     time.sleep(1)
-    Board.setPWMServoPulse(1, 1500, 2000)
-    Board.setPWMServoPulse(3, 2500, 2000)
-    Board.setPWMServoPulse(4, 500, 2000)
-    Board.setPWMServoPulse(5, 1636, 2000)
-    time.sleep(2)
-    Board.setPWMServoPulse(1, 2000, 2000)
-    time.sleep(1.5)
-    Board.setPWMServoPulse(1, 1500, 2000)
-    Board.setPWMServoPulse(3, 590, 2000)
-    Board.setPWMServoPulse(4, 2500, 2000)
-    Board.setPWMServoPulse(5, 700, 2000)
-    Board.setPWMServoPulse(6, 1500, 2000)
+    look_forward()
