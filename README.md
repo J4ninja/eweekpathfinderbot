@@ -12,7 +12,13 @@ Welcome to the PathfinderBot repository! This project provides engineers and tec
 1. Click on the green Code dropdown button on Github and download as a zip
 2. Transfer file to the Robot's Pi (USB, scp from external machine, or Browser on Robot's Pi)
 3. unzip it under /home/robot
-4. You should have all the files under /home/robot/EWeekCode on completition
+4. Run the following
+```bash
+mv /home/robot/eweekpathfinderbot/EWeekCode /home/robot/
+rm -rf eweekpathfinderbot
+rm -f eweekpathfinderbot.zip
+```
+5. You should have all the files under /home/robot/EWeekCode on completition
 
 
 # Workshop Phases
