@@ -9,14 +9,14 @@
 
    There are two switches. One on the motor controller and one on the battery container.
    
-   <img src="/zzimages/RoobotOnOff.jpg" width="400" > 
+   <img src="./zzimages/RoobotOnOff.jpg" width="400" > 
 
 
 ### 2 Change default password - Please do NOT change the hostname
 
    Open the Configuation tool at **Pi -> Preferences -> Raspberry Pi Configuation** and follow instructions.   
    
-   <img src="/zzimages/PiConfigPW.jpg" width="500" > 
+   <img src="./zzimages/PiConfigPW.jpg" width="500" > 
 
 ### 3 Connect to WiFi
 
@@ -26,7 +26,7 @@
 
    Use the same wifi instructions as the Pi500.  See GuestWifi.pdf on the pi's desktop.
 
-   <img src="/zzimages/wifisetup-01.jpg" width="200" > 
+   <img src="./zzimages/wifisetup-01.jpg" width="200" > 
 
    Type in the wifi password using the on screen keypad.
 
@@ -34,7 +34,7 @@
 
    Hover the mouse cursor over the active WiFi icon and write down the assigned IP address. This IP will be used to connect the Pi500 to the robot.   
 
-   <img src="/zzimages/robotwifi.jpg" width="600" > 
+   <img src="./zzimages/robotwifi.jpg" width="600" > 
 
 [Return to main workshop page](/README.md)
 
