@@ -4,9 +4,16 @@ Empowering Engineers Through Hands-On Robotics and Leadership Development
 
 Welcome to the PathfinderBot repository! This project provides engineers and technical teams with a hands-on robotics and leadership development experience. Participants will assemble, program, and operate the MasterPi robot, applying both technical and strategic skills to complete challenges.
 
---- 
 
-## Workshop Phases
+## Installation
+***Instructors Only*** 
+1. Click on the green Code dropdown button on Github and download as a zip
+2. Transfer file to the Robot's Pi
+3. unzip it under /home/robot
+4. You should have all the files under /home/robot/EWeekCode on completition
+
+
+# Workshop Phases
 
 1. Coding Challenge
 - learn about Python functions, docstrings, conditional statements, loops, and more!
@@ -17,8 +24,10 @@ Welcome to the PathfinderBot repository! This project provides engineers and tec
 - Navigate a course with obstacles and blocks
 - leverage a wireless gamepad to drive the robot and pick up blocks
 
-# Coding Instructions
 
+
+# Coding Instructions
+***For Students***
 1. You will be coding in one file ***Model.py***
 2. You will only need to write code under the ***TODO*** sections
 3. On the left side bar, click on Remote Explorer
@@ -51,6 +60,8 @@ sudo /home/robot/EWeeCode/Gamepad/gamepad_setup.sh
 ```
 
 ## Gamepad Controls
+**Note**: the left stick may be the D-Pad depending on the controller and X and Y may be swapped.
+
 - **Left stick Y**:   RIGHT-side track forward/back (swapped)
 - **Right stick Y:**  LEFT-side track forward/back (swapped)
 - **Left/Right X**:   mecanum strafe left/right (average of both X axes)
