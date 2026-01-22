@@ -144,10 +144,29 @@ def sonarDetection():
         time.sleep(0.5)                         # Wait half a second before looping again
 
 # This is an example of turning the servos
+def look_forward():
+    """
+    Resets Arm Position to Forward
+    """
+    Board.setPWMServoPulse(1, 1500, 500)
+    Board.setPWMServoPulse(3, 700, 1000)
+    Board.setPWMServoPulse(4, 2425, 1000)
+    Board.setPWMServoPulse(5, 790, 1000)
+    Board.setPWMServoPulse(6, 1500, 1000)
+    time.sleep(1)
+
+# This is an example of turning the servos
 def turnArmLeft():
     """
     Turns Robot arm to the left
     """
+    Board.setPWMServoPulse(1, 2020, 1000)
+    Board.setPWMServoPulse(3, 800, 1000)
+    Board.setPWMServoPulse(4, 2020, 1000)
+    Board.setPWMServoPulse(5, 2091, 1000)
+    Board.setPWMServoPulse(6, 2500, 1000)
+    time.sleep(1)
+    look_forward()
 
 def turnArmRight():
     """
@@ -159,6 +178,11 @@ def turnArmRight():
     # - pulse: Position (typically between 500 and 2500)
     # - use_time: Time in milliseconds to move
 
+
+    # Don't modify below
+    time.sleep(1)
+    look_forward()
+
 def openAndCloseClaw():
     """
     Opens and closes arm claw
@@ -168,6 +192,10 @@ def openAndCloseClaw():
     # - Servo number (1–6)
     # - pulse: Position (typically between 500 and 2500)
     # - use_time: Time in milliseconds to move
+
+    # Don't modify below
+    time.sleep(1)
+    look_forward()
 
 
 ##################################################################

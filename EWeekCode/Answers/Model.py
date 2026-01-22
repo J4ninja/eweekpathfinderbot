@@ -177,6 +177,14 @@ def turnArmLeft():
     """
     Turns Robot arm to the left
     """
+    Board.setPWMServoPulse(1, 2020, 1000)
+    Board.setPWMServoPulse(3, 800, 1000)
+    Board.setPWMServoPulse(4, 2020, 1000)
+    Board.setPWMServoPulse(5, 2091, 1000)
+    Board.setPWMServoPulse(6, 2500, 1000)
+    time.sleep(1)
+    look_forward()
+
 
 def turnArmRight():
     """
@@ -192,6 +200,7 @@ def turnArmRight():
     Board.setPWMServoPulse(4, 1800, 1000)
     Board.setPWMServoPulse(5, 2091, 1000)
     Board.setPWMServoPulse(6, 500, 1000)
+    # Don't modify below
     time.sleep(1)
     look_forward()
 
@@ -207,6 +216,7 @@ def openAndCloseClaw():
     Board.setPWMServoPulse(3, 900, 800)
     Board.setPWMServoPulse(5, 2364, 800)
     Board.setPWMServoPulse(1, 2020, 2000)
+    # Don't modify below
     time.sleep(1)
     look_forward()
     
