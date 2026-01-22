@@ -26,7 +26,13 @@ Welcome to the PathfinderBot repository! This project provides engineers and tec
 5. In the code folder, you should open up the ***Control.py*** and ***Model.py*** files
 6. Start coding!
 7. To test your code, open a terminal by click Terminal -> New Terminal in the top bar of Visual Studio Code
-8. Run the following in the terminal to run your code
+8. Run the following in the terminal to run your code (Password is R4spb3rry)
+
+```bash
+cd /home/EWeekCode/code
+sudo python Control.py 
+```
+9. If you get stuck, go ahead and open the Answers folder to see what you're missing!
 
 ## Reset Code
 If you want to restart your code, run the following to reset the code to the original assignment

@@ -30,8 +30,7 @@ if __name__ == '__main__':
     ################################
     # Arm Controls
     ################################
-    turnArmRight()                   
-    turnArmLeft()                     # Task 7
+    turnArmRight()                    # Task 7
     openAndCloseClaw()                # Task 8
 
     ################################

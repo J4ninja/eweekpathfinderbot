@@ -232,7 +232,7 @@ def diagonalRight(speed, secs):
 
 def pickupBlock():
     """
-    Robot arm picks up the block in front of it and places it on its back
+    Robot arm picks up the block in front of it
     """
     # TODO Bonus Task 3: Implement a sequence of arm movements to pickup a block in 
-    # front of the robot and place it on its back.
+    # front of the robot
