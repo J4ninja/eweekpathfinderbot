@@ -117,7 +117,7 @@ def sonarDetection():
     Changes LED colors based on Sonar Distances
     """
     startTime = time.time()         # Gets the start time (current time)
-    duration = 30                   # duration in seconds
+    duration = 5                   # duration in seconds
     sonar = Sonar()                 # creates a Sonar object
     sonar.setRGBMode(0)             
 
@@ -159,19 +159,9 @@ def turnArmRight():
     # - pulse: Position (typically between 500 and 2500)
     # - use_time: Time in milliseconds to move
 
-def openClaw():
+def openAndCloseClaw():
     """
-    Opens arm claw
-    """
-    # TODO Task 8: Set the servos to open and close the claw
-    # HINT: Board.setPWMServoPulse(servo_id, pulse, use_time)
-    # - Servo number (1–6)
-    # - pulse: Position (typically between 500 and 2500)
-    # - use_time: Time in milliseconds to move
-
-def closeClaw():
-    """
-    Closes arm claw
+    Opens and closes arm claw
     """
     # TODO Task 8: Set the servos to open and close the claw
     # HINT: Board.setPWMServoPulse(servo_id, pulse, use_time)

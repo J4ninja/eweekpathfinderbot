@@ -32,8 +32,7 @@ if __name__ == '__main__':
     ################################
     turnArmRight()                   
     turnArmLeft()                     # Task 7
-    openClaw()                        # Task 8
-    closeClaw()                       # Task 9
+    openAndCloseClaw()                # Task 8
 
     ################################
     # Bonus Tasks
