@@ -1,4 +1,4 @@
-# E-Week PathFinderBot Robotics Activity Worksop
+# E-Week PathFinderBot Robotics Workshop
 
 Empowering Engineers Through Hands-On Robotics and Leadership Development
 
@@ -8,7 +8,7 @@ Welcome to the PathfinderBot repository! This project provides engineers and tec
 ## Installation
 ***Instructors Only*** 
 1. Click on the green Code dropdown button on Github and download as a zip
-2. Transfer file to the Robot's Pi
+2. Transfer file to the Robot's Pi (USB, scp from external machine, or Browser on Robot's Pi)
 3. unzip it under /home/robot
 4. You should have all the files under /home/robot/EWeekCode on completition
 
